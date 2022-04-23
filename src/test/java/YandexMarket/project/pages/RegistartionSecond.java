@@ -5,6 +5,7 @@ import YandexMarket.framework.brawser.elemets.TextElement;
 import YandexMarket.utils.ConfigFileReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 import java.io.IOException;
 import java.util.Random;
@@ -35,6 +36,9 @@ public class RegistartionSecond {
                 choose.findElements().get(number).click();
             }
         }
+    }
+    public String checkPageSecond(TextElement textElement){
+       return textElement.getText();
     }
 
     public void uploadImage() throws IOException, InterruptedException {
